@@ -1,5 +1,4 @@
-
-        <footer>
+<footer>
             <div class="row">
                 <div class="col-lg-6">
                     <p>&copy; Explore,taste, and enjoy spirits from around good times</p>
@@ -47,3 +46,8 @@
     <?php wp_footer(); ?>
 </body>
 </html>
+<?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
+    <div class="footer-widgets">
+        <?php dynamic_sidebar( 'footer-1' ); ?>
+    </div>
+<?php endif; ?>
